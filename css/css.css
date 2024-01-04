@@ -1,0 +1,347 @@
+*{
+
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bage{
+    background-image: url(https://www.alsafwatravels.com/wp-content/uploads/2023/04/ماليزيا.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+:root{
+    --main-color: #fe9900;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+/* Start Header */
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container ul{
+    display: flex;
+}
+header .container li{
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    transition: var(--main-duration);
+}
+
+header .container li:hover,header .container li:hover i , header .container i:hover{
+    color: var(--main-color);
+}
+header .container i{
+    color: white;
+    transition: var(--main-duration);
+}
+@media (max-width:992px){
+    header{
+        display: none;
+    }
+    header .container li{
+        margin-left: 0px;
+        width: calc(100% + 10px);
+    }
+}
+/* end Header */
+
+
+/* Start Top_name */
+.top_name .container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.top_name ul{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.top_name .fa-solid{
+    display: none;
+    position: relative;
+}
+.top_name ul li{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--main-duration);
+    padding-bottom: 20px;
+}
+.top_name ul li:hover{
+    color: var(--main-color);
+}
+
+.top_name .img img{
+    width: 150px;
+    cursor: pointer;
+    
+}
+.mal{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+
+@media (max-width:992px){
+    .top_name .fa-solid{
+        position: relative;
+    }
+    .top_name ul{
+        display: flex;
+        position: absolute;
+        top: 45px;
+        left: 29px;
+        background-color: white;
+        margin-left: 0px;
+        padding-left: 0px;
+        z-index: 1;
+        display: none;
+    }
+    .top_name ul li{
+        width: 100%;
+        color: #334155;
+        margin-left: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+    .top_name ul li:hover{
+        color: white;
+        background-color: var(--main-color);
+    }
+    .top_name .fa-solid{
+        display: block;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .top_name .links:hover .main{
+        display: flex;
+    }
+}
+
+/* end Top_name */
+
+/* Start Services */
+.services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.services .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.services .card{
+    width: 200px;
+    height: 250px;
+    background-image:url(https://www.alsafwatravels.com/wp-content/uploads/2023/04/2-2.jpg.webp);
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: -25px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #000 , -1px -1px 2px #000;
+}
+@media (max-width:768px){
+    .services .container{
+        flex-direction: column;
+    }
+}
+.services .card:nth-child(2){
+    background-image: url(https://www.alsafwatravels.com/wp-content/uploads/2023/04/1-edit.jpg.webp);
+}
+.services .card:nth-child(3){
+    background-image: url(https://www.alsafwatravels.com/wp-content/uploads/2023/04/3edit.jpg.webp);
+}
+
+/* end Services */
+/* Start Footer */
+footer
+{
+    background-color: #510d98;
+    direction: rtl;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container .logo_map{
+    display: flex;
+    flex-direction: column;
+}
+footer .container .logo_map img{
+    margin-top: 20px;
+    max-width: 200px;
+}
+footer .container .logo_map iframe{
+    width: 200px;
+}
+footer .container .cont{
+    color: white;
+}
+footer .container .cont h2{
+    color: #fff;
+    width: 120px;
+    position: relative; 
+}
+@media (max-width:992px){
+footer h2{
+    margin-left: auto;
+    margin-right: auto;
+}}
+footer .container .cont h2::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    bottom: -8px;
+    right: 0px;
+    height: 2px;
+    background-color: #fe9900;
+    z-index: 1;
+    display: block;
+}
+@media (max-width:992px){
+footer .container .cont h2::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    bottom: -8px;
+    right: 19px;
+    height: 2px;
+    background-color: #fe9900;
+    z-index: 1;
+    display: block;
+}}
+footer .container .cont ul{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+footer .container .cont ul li{
+    color: white;
+    padding: 5px 15px;
+    transition: var(--main-duration);
+    cursor: pointer;
+}
+footer .container .cont ul li:hover{
+    background-color:  var(--main-color);
+    border-radius: 5px;
+}
+@media (max-width:992px){
+    footer .container{
+        flex-direction: column;
+    }
+    footer .cont{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    footer .logo_map{
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
+/* End Footer */
+
+.finish{
+    background-color: #510d98;
+    direction: rtl;
+    margin-top: -20px;
+    color: white;
+    padding: 0px;
+}
+
+.finish .last{
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px;
+}
+.finish .last li{
+    padding: 15px 25px;
+    transition: var(--main-duration);
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:5px ;
+    text-align: center;
+}
+
+.finish .last li:hover{
+    background-color: var(--main-color);
+}
+
+.finish .copy{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+.finish .copy::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 155px;
+    left: -50px;
+}
+@media(min-width:992px){
+    .finish .last{
+        display: flex;
+        text-align: center;
+        margin: 0px;
+    }}
+.finish .copy p{
+    transition: var(--main-duration);
+    cursor: pointer;
+}
